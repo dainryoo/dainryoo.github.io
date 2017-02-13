@@ -1,0 +1,43 @@
+.mainContent {
+    width: 100%;
+    text-align: center;
+    color: #3d5d99;
+}
+.mainContent object {
+    width: 25%;
+    margin-top: 15vh;
+}
+.mainContent h2 {
+    font-size: 1.8vw;
+    margin: 0;
+}
+.navButton {
+    display: block;
+    background-color: transparent;
+    border: 1px solid #3d5d99;
+    border-radius: 4vw;
+    width: 25%;
+    margin: 1vw auto;
+    transition-duration: 0.35s;
+    font-size: 8px;
+}
+
+/*425 pixels or wider*/
+@media screen and (min-width: 425px) {
+    .navButton {
+        font-size: 10px;
+    }
+}
+/*768 pixels or wider*/
+@media screen and (min-width: 768px) {
+    .navButton {
+        font-size: 16px;
+    }
+}
+.navButton:hover {
+    background-color: #3d5d99;
+    color: white;
+    width: 24%;
+    border-radius: 5px;
+    letter-spacing: 0.2vw;
+}
