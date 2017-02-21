@@ -3,7 +3,7 @@
 .mainContent {
     width: 100%;
     text-align: center;
-    color: #3d5d99;
+    color: #74819b;
     font-family: 'Muli', sans-serif;
 }
 .mainContent object {
@@ -20,10 +20,10 @@
     font-style: italic;
     font-size: 2.07vw;
 }
-.navButton {
+.navButton, .miniNavButton {
     display: block;
     background-color: transparent;
-    border: 1px solid #3d5d99;
+    border: 1px solid #74819b;
     border-radius: 4vw;
     width: 55%;
     margin: 1vw auto;
@@ -31,7 +31,7 @@
     font-size: 4.3vw;
 }
 .navButton:hover {
-    background-color: #3d5d99;
+    background-color: #74819b;
     color: white;
     width: 54%;
     letter-spacing: 0.2vw;
@@ -67,3 +67,45 @@
         width: 24%;
     }
 }
+
+/*-----------PORTFOLIO.HTML STYLING-----------*/
+.header {
+    background-color: #74819b;
+    font-family: 'Muli', sans-serif;
+}
+.header object {
+    display: block;
+    width: 40vmin;
+    margin: 0 auto;
+    padding-top: 3vh;
+}
+.project {
+    color: #475166;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+}
+.project img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.miniNavButton {
+    width: 30%;
+    font-size: 11px;
+    border: 1px solid white;
+    color: white;
+    display: inline;
+    margin-left: 1.8vw;
+    margin-top: 2vh;
+}
+/*768 pixels or wider, aka desktop*/
+@media screen and (min-width: 768px) {
+    .miniNavButton {
+        margin-left: 0.4vw;
+    }
+}
+.miniNavButton:hover {
+    background-color: white;
+    color: #74819b;
+}
+
