@@ -72,12 +72,17 @@
 .header {
     background-color: #74819b;
     font-family: 'Muli', sans-serif;
+    padding: 3vmax;
+    margin: 0;
 }
 .header object {
     display: block;
     width: 40vmin;
     margin: 0 auto;
     padding-top: 3vh;
+}
+.projectContainer {
+    margin-top: 5vh;
 }
 .project {
     color: #475166;
