@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Da-In Ryoo</title>
+  <meta name="description" content="I'm a Computer Science student interested in UX engineering and front-end web development.">
+  <link rel="icon" href="media/blushy.png" type="image/png">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:200" rel="stylesheet">
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="landing row">
+
+      <div class="intro twelve columns">
+        <h1>Da-In Ryoo</h1>
+        <h2>developer - designer - artist</h2>
+        <div class="links">
+          <a class="work-link">Work</a>
+          <a href="resume.pdf" target="_blank">Resume</a>
+          <!--<a href="about.html">About</a>-->
+        </div>
+      </div>
+
+    </div> <!-- end row -->
+
+    <div class="portfolio">
+      <div class="row">
+      <div class="portfolio-item four columns">
+        <h4>Brandasaur Web Intern</h4>
+        <span>[2017]</span>
+        <p>Designed and built an initial prototype of the site with WordPress,
+        combining plugins to implement functionality like user accounts and reviews.</p>
+        <a href="http://www.brandasaurapp.com/">Visit Site</a>
+      </div>
+
+      <div class="portfolio-item four columns">
+        <h4>Lukewarm Greeting Cards</h4>
+        <span>[2017]</span>
+        <p>Created by myself in ~9 hours for Pearl Hacks 2017, Lukewarm Greeting
+        Cards is a responsive website that generates unique half-hearted
+         messages for various holidays/occasions.</p>
+         <a href="https://dainryoo.github.io/lukewarm">Visit Site</a>
+      </div>
+
+      <div class="portfolio-item four columns">
+        <h4>Georgia Tech Red Cross</h4>
+        <span>[2016]</span>
+        <p>Completely redesigned Georgia Tech's Red Cross website with my
+        <a href="https://www.facebook.com/pg/GTHumaniTech/about/">HumaniTech</a> team; I was assigned the home page and focused on making the
+        site mobile-friendly. Additional requirements were to have Google Calendar
+        and Facebook Like button plugins.</p>
+        <a href="http://redcross.gtorg.gatech.edu/">Visit Site</a>
+      </div>
+    </div> <!-- end row -->
+
+    <div class="row">
+      <div class="portfolio-item four columns">
+        <h4>Sapling Academia</h4>
+        <span>[2016]</span>
+        <p>A fake quiz website made for my web development class that stores questions/answers
+        and student scores in a database. Students can take quizzes for different
+        subjects, and teachers can view their results. Sadly, it's not complete,
+        but I learned to use very basic PHP for data retrieval and storage, as well
+        as some D3 for data visualization.</p>
+        <a href="https://github.com/dainryoo/sapling-academia">View Repo</a>
+      </div>
+
+      <div class="portfolio-item four columns">
+        <h4>Game Development</h4>
+        <span>[2012-Present]</span>
+        <p>I animated sprites and made artwork for some games by
+        <a href="http://vgdev.gtorg.gatech.edu/profile/dryoo/"></a>Georgia Tech's VGDev Club</a>,
+        collaborated with indie developer <a href="https://cottontrek.itch.io/">cottontrek</a> to create
+        <a href="http://jams.gamejolt.io/badboxart/games/lone-survivor-fury-brush/136437">
+          Lone Survivor: FURY BRUSH</a>, and have a couple tiny games I've made myself.</p>
+        <a href="https://dainryoo.itch.io/">Check them out on my itch.io!</a>
+      </div>
+    </div> <!-- end row -->
+    </div> <!-- end portfolio -->
+
+
+  </div> <!-- end container -->
+
+
+</body>
+</html>
+
+<script>
+  // From https://stackoverflow.com/a/19012631
+  // Thanks!!
+
+  $(".work-link").click(function() {
+    $('html,body').animate({
+      scrollTop: $(".portfolio").offset().top}, 'slow');
+  });
+
+</script>
