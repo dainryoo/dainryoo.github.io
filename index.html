@@ -31,10 +31,14 @@
       <div class="intro twelve columns">
         <h1>Da-In Ryoo</h1>
         <h2>developer - designer - artist</h2>
+        <div class="summary">
+            Hi! I'm Da-In, a 3rd year CS student at Georgia Tech. I love to <a href="https://github.com/dainryoo">code</a> and draw, and I hope to combine these two interests as an aspiring front-end or UX engineer.
+        </div>
+        
         <div class="links">
-          <a class="work-link">Work</a>
-          <a href="resume.pdf" target="_blank">Resume</a>
-          <!--<a href="about.html">About</a>-->
+            <div><a class="work-link">Works</a></div>
+            <div><a href="resume.pdf" target="_blank">Resume</a></div>
+            <div><a class="about-link">Contact</a></div>
         </div>
       </div>
 
@@ -103,12 +107,21 @@
 </html>
 
 <script>
-  // From https://stackoverflow.com/a/19012631
-  // Thanks!!
-
-  $(".work-link").click(function() {
-    $('html,body').animate({
-      scrollTop: $(".portfolio").offset().top}, 'slow');
-  });
+    // From https://stackoverflow.com/a/19012631
+    // Thanks!!
+    $(".work-link").click(function() {
+        $('html,body').animate({
+          scrollTop: $(".portfolio").offset().top}, 'slow');
+    });
+    
+    $(".about-link").click(function() {
+        if ($(".about-link").html() == "Contact") {
+            $(".summary").html("Email: dryoo6@gatech.edu<br />LinkedIn: <a href='https://www.linkedin.com/in/dainryoo'>linkedin.com/in/dainryoo</a>");
+            $(".about-link").html("About");
+        } else {
+            $(".summary").html("Hi! I'm Da-In, a 3rd year CS student at Georgia Tech. I love to <a href='https://github.com/dainryoo'>code</a> and draw, and I hope to combine these two interests as an aspiring front-end or UX engineer.");
+            $(".about-link").html("Contact");
+        }
+    })
 
 </script>
