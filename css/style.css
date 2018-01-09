@@ -7,6 +7,13 @@
     background-color: #ffb2b2;
     color: white;
 }
+/* Entire page */
+body {
+    color: rgb(116, 131, 154);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
 /* Link colors */
 a {
     text-decoration: none;
@@ -67,7 +74,7 @@ a:hover {
     width: 40vmax;
     margin: 5vh auto;
     font-size: 12px;
-    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
 }
 @media only screen and (max-device-width: 736px) {
     .summary {
@@ -136,4 +143,58 @@ a:hover {
     transition: 0.1s;
     margin-bottom: 20px;
     padding: 2vmin;
+}
+
+
+
+
+/* Case Study container width */
+.case-study {
+    padding: 0 40px 100px;
+}
+
+
+/* Case Study title */
+.case-title {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    color: white;
+}
+.case-title h1 {
+    font-size: 40px;
+    font-weight:600;
+}
+.music {
+    background-color: #c0ccf2;
+}
+.sheep {
+    background-color: #cadbb9;
+}
+.thracker {
+    background-color: #86b9fd;
+}
+
+/* Case Study Subtitles */
+.case-study h4 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 60px;
+}
+
+/* Case Study bold */
+.case-study p b{
+    background-color: #ffffc5;
+    font-weight: 100;
+    
+}
+
+/* Case Study images */
+.case-study img {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+}
+.case-study .six img {
+    width: 80%;
 }
