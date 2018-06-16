@@ -1,200 +1,151 @@
-/* Text highlight colors */
-::selection {
-    background-color: #ffb2b2;
-    color: white;
-}
-::-moz-selection {
-    background-color: #ffb2b2;
-    color: white;
-}
-/* Entire page */
-body {
-    color: rgb(116, 131, 154);
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-}
-
-/* Link colors */
 a {
-    text-decoration: none;
-    color: #95d6ff;
-    -webkit-transition: 0.6s;
-	-moz-transition: 0.6s;
-	-o-transition: 0.6s;
-	transition: 0.6s;
+    color: #737e98;
+    transition: 0.2s;
+    font-weight: 800;
 }
 a:hover {
-    color: #5753c1;
+    color: #2a52b1
 }
 
-/* Make container full page width */
-.container {
-    max-width: none;
+body {
     margin: 0;
-    padding: 0;
-    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #4b4b4b;
 }
 
-/* Section with name, subtitle, and links */
-.landing {
-    height: 100vh;
-    
-    background: rgba(124,169,235,1);
-    background: -moz-linear-gradient(left, rgba(124,169,235,1) 0%, rgba(175,139,240,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(124,169,235,1)), color-stop(100%, rgba(175,139,240,1)));
-    background: -webkit-linear-gradient(left, rgba(124,169,235,1) 0%, rgba(175,139,240,1) 100%);
-    background: -o-linear-gradient(left, rgba(124,169,235,1) 0%, rgba(175,139,240,1) 100%);
-    background: -ms-linear-gradient(left, rgba(124,169,235,1) 0%, rgba(175,139,240,1) 100%);
-    background: linear-gradient(to right, rgba(124,169,235,1) 0%, rgba(175,139,240,1) 100%);
+/* Flex container */
+.container {
+    display: flex;
+    position: relative;
 }
 
-/* Name, subtitle, summary */
-.intro {
-    cursor: default;
-    text-align: center;
-    color: white;
+/* For horiztonally aligned divs */
+.container > div {
+    padding: 80px;
+    box-sizing: border-box;
     padding-top: 30vh;
-    font-family: 'Nunito', sans-serif;
+}
+@media (max-width: 1056px) {
+    .container > div {
+        padding: 65px;
+        padding-top: 30vh;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 700px) {
+    .container > div {
+        padding-top: 10vh;
+    }
+}
+@media (max-width: 425px) {
+    .container > div {
+        padding: 50px;
+        padding-top: 70px;
+        box-sizing: border-box;
+    }
+}
+
+/* ============= The Color Block ============= */
+/* For wide screens */
+.color-block {
+    background-color: #ffa79b;
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+}
+@media (max-width: 900px) { 
+    .color-block {
+        width: 40vw;
+    }
+}
+@media (max-width: 700px) { 
+    .color-block {
+        position: fixed;
+        width: 100vw;
+        height: 30vw;
+    }
 }
 /* Name */
-.intro h1 {
-    letter-spacing: 3px;
-    font-size: 14vmin;
-    text-shadow: 0.7vmin 1px rgba(255, 255, 255, 0.2);
+.color-block h1 {
+    color: white;
+    font-family: 'Miriam Libre', sans-serif;
+    font-size: 5vmax;
+    letter-spacing: 5px;
+    margin: 0;
 }
-/* Subtitle */
-.intro h2 {
-    font-size: 6vmin;
-    font-family: 'Montserrat Alternates', sans-serif;
-    margin: 0 auto;
-}
-/* Summary Paragraph */
-.summary {
-    height: 8vmin;
-    width: 40vmax;
-    margin: 5vh auto;
-    font-size: 12px;
-    font-weight: 100;
-}
-@media only screen and (max-device-width: 736px) {
-    .summary {
-        height: 8vmax;
-        margin-bottom: 8vh;
+@media (max-width: 700px) {
+    .color-block h1 {
+        font-size: 10vw;
     }
 }
 
-/* Page Nav */
-.links a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
+/* Intro Text */ 
+.color-block p {
+    text-align: justify;
 }
-.links div {
-    width: 12vmax;
-    position: relative;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-    padding: 10px 0;
-    text-transform: uppercase;
-	-webkit-transition: 0.4s;
-	-moz-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
-	position: relative;
-}
-@media only screen and (max-device-width: 1040px) {
-    .links div {
-        width: 15vmax;
+@media (max-width: 700px) {
+    .color-block p {
+        display: none;
     }
 }
-.links div::after {
-    content:"";
-    position: absolute;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    top: 80%;
-    left: 30%;
-    width: 40%;
-    
-    -webkit-transition: 0.4s;
-	-moz-transition: 0.4s;
-	-o-transition: 0.4s;
-	transition: 0.4s;
+/* Intro link section */
+.color-block .intro-links {
+    margin-top: 10vh;
 }
-.links div:hover {
-    color: white;
-	-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
-    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
-}
-.links div:hover::after {
-    border-bottom-color: transparent;
-    left: 0%;
-    top: 100%;
-    width: 100%;
+@media (max-width: 700px) {
+    .color-block .intro-links {
+        margin-top: 20px;
+    }
 }
 
-/* The Works */
-.portfolio {
-    padding: 20px;
-}
-
-.portfolio-item {
-    min-height: 20vw;
-    transition: 0.1s;
-    margin-bottom: 20px;
-    padding: 2vmin;
-}
-
-
-
-
-/* Case Study container width */
-.case-study {
-    padding: 0 40px 100px;
-}
-
-
-/* Case Study title */
-.case-title {
-    text-align: center;
-    font-size: 50px;
-    padding-top: 90px;
-    padding-bottom: 60px;
-    color: white;
-}
-.case-title h1 {
-    font-size: 40px;
-    font-weight:600;
-}
-.music {
-    background-color: #c0ccf2;
-}
-.sheep {
-    background-color: #cadbb9;
-}
-.thracker {
-    background-color: #86b9fd;
-}
-
-/* Case Study Subtitles */
-.case-study h4 {
-    font-family: 'Raleway', sans-serif;
-    margin-top: 60px;
-}
-
-/* Case Study bold */
-.case-study p b{
-    background-color: #ffffc5;
-    font-weight: 100;
-    
-}
-
-/* Case Study images */
-.case-study img {
+/* Individual intro links */
+.color-block .intro-links a {
     display: block;
-    margin: 10px auto;
-    width: 100%;
+    margin-bottom: 10px;
+    width: 25%;
 }
-.case-study .six img {
-    width: 80%;
+
+@media (max-width: 700px) {
+    .color-block .intro-links a {
+        display: inline;
+    }
+}
+
+
+/* ============= Portfolio ============= */
+/* For wide screens */
+.portfolio {
+    background-color: #f3faff;
+    width: 70vw;
+    margin-left: 30vw;
+}
+
+.portfolio h2 {
+    margin-bottom: 80px;
+}
+
+/* For medium screens */
+@media (max-width: 900px) { 
+    .portfolio {
+        width: 60vw;
+        margin-left: 40vw;
+    }
+}
+
+/* For tiny screens */
+@media (max-width: 700px) { 
+    .portfolio {
+        width: 100vw;
+        margin-left: 0;
+        margin-top: 120px;
+    }
+}
+.portfolio-item {
+    margin-bottom: 60px;
+}
+.portfolio-item h3 {
+    font-family: 'Miriam Libre', sans-serif;
+}
+.portfolio-item p {
+    margin-top: 10px;
 }

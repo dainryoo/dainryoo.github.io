@@ -9,113 +9,80 @@
     <meta name="description" content="I'm a Computer Science student interested in UX engineering and front-end web development.">
     <link rel="icon" href="media/blushy.png" type="image/png">
     
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:200" rel="stylesheet">
-    
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Miriam+Libre:700" rel="stylesheet">
 
 </head>
 <body>
-
     <div class="container">
-        <div class="landing row">
-            <div class="intro twelve columns">
-                <h1>Da-In Ryoo</h1>
-                <h2>developer - designer - artist</h2>
-                <div class="summary">Hi! I'm Da-In, a 3rd year CS student at Georgia Tech. I love to <a href="https://github.com/dainryoo">code</a> and draw, and I hope to combine these two interests as an aspiring front-end or UX engineer.</div>
-                
-                <div class="links">
-                    <div><a class="work-link">Works</a></div>
-                    <div><a href="resume.pdf" target="_blank">Resume</a></div>
-                    <div><a class="about-link">Contact</a></div>
-                </div>
+        <div class="color-block">
+            <h1>Da-In Ryoo.</h1>
+            <p>Hi, I'm Da-In, a rising 4th year CS student at Georgia Tech. I'm currently at IBM as a front-end developer for their Summer 2018 Patterns internship!</p>
+            <div class="intro-links">
+                <a href="resume.pdf" target="_blank">[Resume]</a>
+                <a href="https://www.linkedin.com/in/dainryoo" target="_blank">[LinkedIn]</a>
+                <a href="https://github.com/dainryoo" target="_blank">[Github]</a>
             </div>
-        </div> <!-- end row -->
-        
-        <div class="portfolio">
-            <div class="row">
-                <div class="portfolio-item four columns">
-                    <h4>Social Music</h4>
-                    <p>A mobile app that builds unique playlists by automatically queuing up songs from playlists of landmarks and passersby the user walks past. The project began with user research and ended with conducting tests of our InVision prototype.</p>
-                    <a href="case/music.html" target="_blank">The Case Study</a>
-                </div>
-                
-                <div class="portfolio-item four columns">
-                    <h4>Thracker</h4>
-                    <p>An ongoing project to build a costume and prop inventory database for the UAH Theater Group. </p>
-                    <a href="case/thracker.html" target="_blank">The Case Study</a>
-                </div>
-                
-                <div class="portfolio-item four columns">
-                    <h4>#mood</h4>
-                    <p>Created by myself at Pearl Hacks 2018, #mood asks you how you're feeling and shows you the hexadecimal color representation of your current emotion. Record and visualize the progression of your mood over time through color.</p>
-                    <a href="https://dainryoo.github.io/color-me" target="_blank">Try it out!</a>
-                </div>
-                
-            </div> <!-- end row -->
-            
-            <div class="row">
-                <div class="portfolio-item four columns">
-                    <h4>Lukewarm Greeting Cards</h4>
-                    <p>Created by myself in ~9 hours for Pearl Hacks 2017, Lukewarm Greeting Cards is a responsive website that generates unique half-hearted messages for various holidays/occasions.</p>
-                    <a href="https://dainryoo.github.io/lukewarm" target="_blank">Try it out!</a>
-                </div>
-                
-                <div class="portfolio-item four columns">
-                    <h4>Georgia Tech Red Cross</h4>
-                    <p>Completely redesigned Georgia Tech's Red Cross website with my <a href="https://www.facebook.com/pg/GTHumaniTech/about/" target="_blank">HumaniTech</a> team; I was assigned the home page and focused on making the site mobile-friendly. Additional requirements were to have Google Calendar and Facebook Like button plugins.</p>
-                    <a href="http://redcross.gtorg.gatech.edu/" target="_blank">View Site</a>
-                </div>
-                
-                <div class="portfolio-item four columns">
-                    <h4>Sapling Academia</h4>
-                    <p>A fake quiz website made for my web development class that stores questions/answers and student scores in a database. Students can take quizzes for different subjects, and teachers can view their results. Sadly, it's not complete, but I learned to use very basic PHP for data retrieval and storage, as well as some D3 for data visualization.</p>
-                    <a href="https://github.com/dainryoo/sapling-academia" target="_blank">View Repo</a>
-                </div>
-            </div><!-- end row -->
-            
-            <div class="row">
-                <div class="portfolio-item four columns">
-                    <h4>A chicken considers crossing the road</h4>
-                    <p>A 3D animation about a cautious chicken, done in Python with Processing's basic shapes and matrix transformations.</p>
-                    <p><a href="https://youtu.be/5AyqufgUVF0" target="_blank">View Animation</a><br><a href="https://github.com/dainryoo/chicken-crossing" target="_blank">View Repo</a></p>
-                </div>
-                
-                <div class="portfolio-item four columns">
-                    <h4>Game dev</h4>
-                    <p>I like to make little games in my free time!</p>
-                    <a href="https://dainryoo.itch.io/" target="_blank">Check them out here</a>
-                </div>
-            </div><!-- end row -->
-        </div> <!-- end portfolio -->
-    </div> <!-- end container -->
+        </div>
 
+        <div class="portfolio">
+            <h2>Things I've made.</h2>
+            <!-- TODO: Maybe an option to view this list in different orders? Example: most entertaining, most technically involved, chronological -->
+            <div class="portfolio-item">
+                <h3>#mood</h3>
+                <a href="https://dainryoo.github.io/color-me" target="_blank">[Live]</a>
+                <p>Created at Pearl Hacks 2018, #mood asks you how you're feeling and shows you the hexadecimal color representation of your current emotion. Record and visualize the progression of your mood with a color timeline.</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>Atlanta Farms, Gardens, and Orchards</h3>
+                <a href="http://farm.stephanieg.xyz" target="_blank">[Live]</a>
+                <p>A semester long team project involving data retrieval, storage, and editing, in addition to different pages for different user types. The website was built with PHP and MySQL, and I worked on database manipulation and the front-end.</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>Thracker</h3>
+                <a href="case/thracker.html" target="_blank">[Case Study]</a>
+                <p>An ongoing project to build a costume and prop inventory database for the UAH Theater Group. </p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>Social Music</h3>
+                <a href="case/music.html" target="_blank">[Case Study]</a>
+                <p>A mobile app that builds unique playlists by automatically queuing up songs from playlists of landmarks and passersby the user walks past. The project began with user research and ended with conducting tests of our InVision prototype.</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>Lukewarm Greeting Cards</h3>
+                <a href="https://dainryoo.github.io/lukewarm" target="_blank">[Live]</a>
+                <p>Created at Pearl Hacks 2017, Lukewarm Greeting Cards is a responsive website that generates unique half-hearted messages for various holidays/occasions.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Georgia Tech Red Cross</h3>
+                <a href="http://redcross.gtorg.gatech.edu/" target="_blank">[Live]</a>
+                <p>Completely redesigned Georgia Tech's Red Cross website with my <a href="https://www.facebook.com/pg/GTHumaniTech/about/" target="_blank">HumaniTech</a> team; I was assigned the home page and focused on making the site mobile-friendly. Additional requirements were to have Google Calendar and Facebook Like button plugins.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Sapling Academia</h3>
+                <a href="https://github.com/dainryoo/sapling-academia" target="_blank">[Repo]</a>
+                <p>A fake quiz website made for my web development class that stores questions/answers and student scores in a database. Students can take quizzes for different subjects, and teachers can view their results. Sadly, it's not complete, but I learned to use very basic PHP for data retrieval and storage, as well as some D3 for data visualization.</p>
+            </div>
+            
+            <div class="portfolio-item">
+                <h3>A chicken considers crossing the road</h3>
+                <a href="https://youtu.be/5AyqufgUVF0" target="_blank">[Video]</a> <a href="https://github.com/dainryoo/chicken-crossing" target="_blank">[Repo]</a>
+                <p>A 3D animation about a cautious chicken, done in Python with Processing's basic shapes and matrix transformations.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>Game dev</h3>
+                <a href="https://dainryoo.itch.io/" target="_blank">[Portfolio]</a>
+                <p>I like to make little games in my free time!</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
-<script>
-    // From https://stackoverflow.com/a/19012631
-    // Thanks!!
-    $(".work-link").click(function() {
-        $('html,body').animate({
-            scrollTop: $(".portfolio").offset().top}, 'slow');
-    });
-
-    $(".about-link").click(function() {
-        if ($(".about-link").html() == "Contact") {
-            $(".summary").html("Email: dryoo6@gatech.edu<br />LinkedIn: <a href='https://www.linkedin.com/in/dainryoo'>linkedin.com/in/dainryoo</a>");
-            $(".about-link").html("About");
-        } else {
-            $(".summary").html("Hi! I'm Da-In, a 3rd year CS student at Georgia Tech. I love to <a href='https://github.com/dainryoo'>code</a> and draw, and I hope to combine these two interests as an aspiring front-end or UX engineer.");
-            $(".about-link").html("Contact");
-        }
-    })
-</script>
