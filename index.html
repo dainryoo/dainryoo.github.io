@@ -4,85 +4,148 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="LkBWVw8Tg5SovEr2HF7ks0wTcKDegFW6Th53fRL0nCc" />
-    
     <title>Da-In Ryoo</title>
     <meta name="description" content="I'm a Computer Science student interested in UX engineering and front-end web development.">
     <link rel="icon" href="media/blushy.png" type="image/png">
-    
     <link rel="stylesheet" href="css/style.css">
-    
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Miriam+Libre:700" rel="stylesheet">
 
+    <script type="text/javascript" src="./case/portfolioItems.js"></script>
+    <script type="text/javascript" src="./case/isidGuide.js"></script>
+    <script type="text/javascript" src="./case/socialMusic.js"></script>
 </head>
-<body>
+<body onload="buildAllContent()">
     <div class="container">
-        <div class="color-block">
-            <h1>Da-In Ryoo.</h1>
-            <p>Hi, I'm Da-In, a rising 4th year CS student at Georgia Tech. I'm currently at IBM as a front-end developer for their Summer 2018 Patterns internship!</p>
-            <div class="intro-links">
-                <a href="resume.pdf" target="_blank">[Resume]</a>
-                <a href="https://www.linkedin.com/in/dainryoo" target="_blank">[LinkedIn]</a>
-                <a href="https://github.com/dainryoo" target="_blank">[Github]</a>
+        <div class="left-block">
+            <div class="name">
+                <h1>Da-In Ryoo.</h1>
+            </div>
+            <div class="intro">
+                <p>CS Student @ Georgia Tech</p>
+                <p>Front-End Developer</p>
+                <p>Artist</p>
+            </div>
+            <div class="links">
+                <a id="toggle-button" onclick="rightBlockToggle(); return false;" href="">About.</a>
+                <a href="resume.pdf" target="_blank">Resume.</a>
+                <a href="https://www.linkedin.com/in/dainryoo" target="_blank">LinkedIn.</a>
+                <a href="https://github.com/dainryoo" target="_blank">Github.</a>
             </div>
         </div>
 
-        <div class="portfolio">
-            <h2>Things I've made.</h2>
-            <!-- TODO: Maybe an option to view this list in different orders? Example: most entertaining, most technically involved, chronological -->
-            <div class="portfolio-item">
-                <h3>#mood</h3>
-                <a href="https://dainryoo.github.io/color-me" target="_blank">[Live]</a>
-                <p>Created at Pearl Hacks 2018, #mood asks you how you're feeling and shows you the hexadecimal color representation of your current emotion. Record and visualize the progression of your mood with a color timeline.</p>
+        <div class="right-block">
+            <div class="portfolio-list">
+                <h2>Things I've made.</h2>
             </div>
-            
-            <div class="portfolio-item">
-                <h3>Atlanta Farms, Gardens, and Orchards</h3>
-                <a href="http://farm.stephanieg.xyz" target="_blank">[Live]</a>
-                <p>A semester long team project involving data retrieval, storage, and editing, in addition to different pages for different user types. The website was built with PHP and MySQL, and I worked on database manipulation and the front-end.</p>
+            <div class="case-study social-music">
+                <h2>The Social Music App</h2>
             </div>
-            
-            <div class="portfolio-item">
-                <h3>Thracker</h3>
-                <a href="case/thracker.html" target="_blank">[Case Study]</a>
-                <p>An ongoing project to build a costume and prop inventory database for the UAH Theater Group. </p>
+            <div class="case-study isid-guide">
+                <h2>The ISID Mobile Guide</h2>
             </div>
-            
-            <div class="portfolio-item">
-                <h3>Social Music</h3>
-                <a href="case/music.html" target="_blank">[Case Study]</a>
-                <p>A mobile app that builds unique playlists by automatically queuing up songs from playlists of landmarks and passersby the user walks past. The project began with user research and ended with conducting tests of our InVision prototype.</p>
-            </div>
-            
-            <div class="portfolio-item">
-                <h3>Lukewarm Greeting Cards</h3>
-                <a href="https://dainryoo.github.io/lukewarm" target="_blank">[Live]</a>
-                <p>Created at Pearl Hacks 2017, Lukewarm Greeting Cards is a responsive website that generates unique half-hearted messages for various holidays/occasions.</p>
-            </div>
-
-            <div class="portfolio-item">
-                <h3>Georgia Tech Red Cross</h3>
-                <a href="http://redcross.gtorg.gatech.edu/" target="_blank">[Live]</a>
-                <p>Completely redesigned Georgia Tech's Red Cross website with my <a href="https://www.facebook.com/pg/GTHumaniTech/about/" target="_blank">HumaniTech</a> team; I was assigned the home page and focused on making the site mobile-friendly. Additional requirements were to have Google Calendar and Facebook Like button plugins.</p>
-            </div>
-
-            <div class="portfolio-item">
-                <h3>Sapling Academia</h3>
-                <a href="https://github.com/dainryoo/sapling-academia" target="_blank">[Repo]</a>
-                <p>A fake quiz website made for my web development class that stores questions/answers and student scores in a database. Students can take quizzes for different subjects, and teachers can view their results. Sadly, it's not complete, but I learned to use very basic PHP for data retrieval and storage, as well as some D3 for data visualization.</p>
-            </div>
-            
-            <div class="portfolio-item">
-                <h3>A chicken considers crossing the road</h3>
-                <a href="https://youtu.be/5AyqufgUVF0" target="_blank">[Video]</a> <a href="https://github.com/dainryoo/chicken-crossing" target="_blank">[Repo]</a>
-                <p>A 3D animation about a cautious chicken, done in Python with Processing's basic shapes and matrix transformations.</p>
-            </div>
-
-            <div class="portfolio-item">
-                <h3>Game dev</h3>
-                <a href="https://dainryoo.itch.io/" target="_blank">[Portfolio]</a>
-                <p>I like to make little games in my free time!</p>
+            <div class="about">
+                <h2>About.</h2>
+                <p>Hi! I'm a 4th year <b>Computer Science</b> student at Georgia Tech, interested in pursuing a career in <b>UX</b> or <b>front-end development</b>.</p>
+                <p>I like to <a href="https://www.behance.net/dainryoo" target="_blank">draw</a>, <a href="https://www.instagram.com/dainryoo" target="_blank">animate</a>, <a href="https://dainryoo.itch.io/" target="_blank">make games</a>, and dream about beekeeping in my free time.</p>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+
+    function buildAllContent() {
+        buildPortfolioItems();
+        buildCaseStudy('social-music', socialMusic);
+        buildCaseStudy('isid-guide', isidGuide);
+    }
+
+    function rightBlockToggle() {
+        var aboutMe = document.getElementsByClassName("about")[0];
+        var portfolioList = document.getElementsByClassName("portfolio-list")[0];
+        var caseStudies = document.getElementsByClassName("case-study");
+        var toggleButton = document.getElementById("toggle-button");
+        if (toggleButton.innerHTML === "Portfolio.") {
+            portfolioList.style.display = "block";
+            aboutMe.style.display = "none";
+            for (var caseStudy of caseStudies) {
+                caseStudy.style.display = "none";
+            }
+            toggleButton.innerHTML = "About.";
+        } else {
+            portfolioList.style.display = "none";
+            aboutMe.style.display = "block";
+            for (var caseStudy of caseStudies) {
+                caseStudy.style.display = "none";
+            }
+            toggleButton.innerHTML = "Portfolio.";
+        }
+        // From https://stackoverflow.com/a/4210821
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
+
+    function buildPortfolioItems() {
+        var portfolioList = document.getElementsByClassName('portfolio-list')[0];
+        for (var i = 0; i < projects.length; i++) {
+            var project = projects[i];
+            var portfolioItem = document.createElement("div");
+            portfolioItem.className = "portfolio-item";
+
+            var titleSection = document.createElement("div");
+            titleSection.className = "portfolio-title";
+
+            var title = document.createElement("h3");
+            title.innerHTML = project.title;
+            titleSection.appendChild(title);
+
+            var link = document.createElement("a");
+            if (project.link.startsWith("casestudy")) {
+                link.href = "";
+                var showCaseStudyFunc = "showCaseStudy(\'" + project.link.substring(10) + "\'); return false;";
+                link.setAttribute("onclick", showCaseStudyFunc);
+            } else {
+                link.href = project.link;
+            }
+            link.innerHTML = project.linkType;
+            titleSection.appendChild(link);
+
+            var summarySection = document.createElement("div");
+            summarySection.className = "portfolio-summary";
+
+            var summary = document.createElement("p");
+            summary.innerHTML = project.summary;
+            summarySection.appendChild(summary);
+
+            portfolioItem.appendChild(titleSection);
+            portfolioItem.appendChild(summarySection);
+
+            portfolioList.appendChild(portfolioItem);
+        }
+    }
+
+    function showCaseStudy(caseStudyName) {
+        var caseStudy = document.getElementsByClassName(caseStudyName)[0];
+        var portfolioList = document.getElementsByClassName("portfolio-list")[0];
+        var toggleButton = document.getElementById("toggle-button");
+        portfolioList.style.display = "none";
+        caseStudy.style.display = "block";
+        toggleButton.innerHTML = "Portfolio.";
+        // From https://stackoverflow.com/a/4210821
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
+
+    function buildCaseStudy(caseStudyName, caseStudyArray) {
+        var caseStudy = document.getElementsByClassName(caseStudyName)[0];
+        for (var i = 0; i < caseStudyArray.length; i++) {
+            var section = caseStudyArray[i];
+            var sectionTitle = document.createElement("h3");
+            sectionTitle.innerHTML = section.title;
+            caseStudy.appendChild(sectionTitle);
+            var sectionContent = document.createElement("div");
+            sectionContent.innerHTML = section.content;
+            caseStudy.appendChild(sectionContent);
+        }
+    }
+
+</script>
