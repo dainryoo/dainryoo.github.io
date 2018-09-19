@@ -2,7 +2,7 @@ var projects = [
     {
         title: "ISID Guide",
         link: "casestudy-isid-guide",
-        linkType: "Case Study",
+        linkType: "Retrospective",
         date: "Summer 2018",
         summary: "During my summer at IBM Design's Patterns Internship, my team collaborated with ISID to turn their infection prevention and control <a href=\"http://www.isid.org/education/guide-to-infection-control-in-the-healthcare-setting/\" target=\"_blank\">guide</a> into a mobile solution."
     },
@@ -23,7 +23,7 @@ var projects = [
     {
         title: "Social Music",
         link: "casestudy-social-music",
-        linkType: "Case Study",
+        linkType: "Retrospective",
         date: "Spring 2017",
         summary: "A mobile app that builds unique playlists by automatically queuing up songs from playlists of landmarks and passersby the user walks past. The project began with user research and ended with conducting tests of our InVision prototype."
     },
