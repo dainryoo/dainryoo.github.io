@@ -22,6 +22,6 @@ var isidGuide = [
     },
     {
         title: "And the summer ends.",
-        content: "<p>Last week was a whirwind of presentation practice and panicked last-minute coding. But the final presentation went wonderfully, our speakers were fantastic, and I was finally ready to let go of the code. In the end the functionality we got for the coded deliverable included: <b>search functionality that matches keywords to article titles and metatags, search suggestions, commenting, custom content creation/editing, and article pinning/favoriting</b>.</p><p>And after 10 hot weeks, I left Austin with some new friends, React Native experience developed at breakneck speeds, and a deeper appreciation for small, baby soft tacos.</p>"
+        content: "<p>Last week was a whirlwind of presentation practice and panicked last-minute coding. But the final presentation went wonderfully, our speakers were fantastic, and I was finally ready to let go of the code. In the end the functionality we got for the coded deliverable included: <b>search functionality that matches keywords to article titles and metatags, search suggestions, commenting, custom content creation/editing, and article pinning/favoriting</b>.</p><p>And after 10 hot weeks, I left Austin with some new friends, React Native experience developed at breakneck speeds, and a deeper appreciation for small, baby soft tacos.</p>"
     }
 ];
