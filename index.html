@@ -33,6 +33,12 @@
             </div>
         </div>
 
+        <div class="circles">
+            <svg>
+                <circle class="circle" cx="0" cy="0" r="50" fill="#529fca" />
+            </svg>
+        </div>
+
         <div class="right-block">
             <div class="portfolio-list">
                 <h2>Things I've made.</h2>
@@ -54,6 +60,15 @@
 </html>
 
 <script>
+
+    window.setInterval(function() {
+    // var curvyBoy = document.getElementById("hewwo");
+    // var currentCurve = curvyBoy.getAttribute("d");
+    // var val = currentCurve.split(" ");
+    // val[6] = val[6] - 5;
+    // var newCurve = "M " + val[1] + " " + val[2] + " Q " + val[4] + " " + val[5] + " " + val[6] + " " + val[7];
+    // curvyBoy.setAttribute("d", newCurve);
+    }, 100);
 
     function buildAllContent() {
         buildPortfolioItems();
@@ -147,5 +162,4 @@
             caseStudy.appendChild(sectionContent);
         }
     }
-
 </script>
