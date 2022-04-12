@@ -1,0 +1,182 @@
+/* Color variables */
+$color-background: #f0ebeb;
+$color-text: #51586f;
+$color-link: #596bbd;
+$color-link-hover: #0f237a;
+$color-special: #ff9791;
+
+/* Font size variables */
+$font-xl: 4rem;
+$font-lg: 2rem;
+$font-md: 1.5rem;
+$font-sm: 1rem;
+
+/* Animation speed variable */
+$hover-duration: 175ms;
+
+/* Mobile/desktop view settings */
+$mobile-breakpoint: 1024px;
+@mixin mobile {
+  @media (max-width: #{$mobile-breakpoint}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$mobile-breakpoint}) {
+    @content;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Poppins&display=swap");
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: $color-background;
+  color: $color-text;
+  font-family: "Poppins", sans-serif;
+}
+
+.pageContainer {
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 0 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & > * {
+    margin: 1rem 0;
+  }
+
+  .nameText {
+    svg {
+      font-family: "Aleo", Arial;
+      width: 100%;
+
+      &.desktopTitle {
+        font-size: 24px;
+        @include mobile {
+          display: none;
+        }
+
+        text {
+          stroke-width: 0.75px;
+        }
+      }
+
+      &.mobileTitle {
+        font-size: 48px;
+        @include desktop {
+          display: none;
+        }
+        text {
+          stroke-width: 1px;
+        }
+      }
+
+      text {
+        fill: $color-background;
+        stroke-linejoin: round;
+      }
+    }
+  }
+  .descriptionContainer {
+    font-size: $font-lg;
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+      font-size: $font-md;
+      margin-bottom: 2rem;
+
+      & > .link {
+        text-decoration: none;
+        margin-right: 2rem;
+        display: grid;
+
+        @keyframes moveToLeft {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-20px);
+          }
+        }
+
+        & > .linkText {
+          color: $color-link;
+          transition-duration: $hover-duration;
+        }
+
+        & > .svgContainer {
+          overflow: hidden;
+          position: relative;
+          height: 10px;
+
+          & > .underlineContainer {
+            animation: moveToLeft 1s linear infinite;
+            animation-play-state: paused; // don't play the underline container animation yet (turn on to speed up animation on hover)
+
+            & > .underline {
+              transition-duration: $hover-duration;
+              position: absolute;
+              top: 0;
+
+              stroke: $color-link;
+              stroke-width: 2px;
+              stroke-linecap: round;
+              fill: none;
+              height: 10px;
+              width: 240px;
+              animation: moveToLeft 2s linear infinite; // actual underline animation is always on
+            }
+          }
+        }
+
+        &:hover {
+          & > .linkText {
+            color: $color-link-hover;
+          }
+          & > .svgContainer > .underlineContainer {
+            animation-play-state: running; // on hover, "increase speed" by turning on underline container animation too
+            & > .underline {
+              stroke: $color-link-hover;
+            }
+          }
+        }
+      }
+    }
+
+    .descriptionText {
+      margin-bottom: 2rem;
+
+      a {
+        color: $color-link;
+        transition-duration: $hover-duration;
+        &:hover {
+          color: $color-link-hover;
+        }
+      }
+      .colorHexText {
+        display: inline-flex;
+        align-items: center;
+        font-family: Courier, monospace;
+
+        .colorSquare {
+          display: inline-block;
+          height: 24px;
+          width: 24px;
+          border-radius: 20%;
+          margin-left: 0.5rem;
+          margin-right: 0.25rem;
+        }
+      }
+    }
+  }
+}
